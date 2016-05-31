@@ -1,0 +1,8 @@
+zend_extension=opcache.so
+opcache.memory_consumption=<%= node[:php][:opcache][:memory_consumption] %>
+opcache.interned_strings_buffer=<%= node[:php][:opcache][:interned_strings_buffer] %>
+opcache.max_accelerated_files=<%= node[:php][:opcache][:max_accelerated_files] %>
+opcache.revalidate_freq=<%= node[:php][:opcache][:revalidate_freq] %>
+opcache.enable_cli=<%= node[:php][:opcache][:enable_cli] %>
+opcache.blacklist_filename="<%= node[:php][:opcache][:blacklist_filepath] %>"
+opcache.max_wasted_percentage=<%= node[:php][:opcache][:max_wasted_percentage] %>
